@@ -70,5 +70,10 @@ drive.mount('/content/drive')
 
 ## ✨ Créditos
 
-Desarrollado como parte de una demostración avanzada del algoritmo ORB, con visualizaciones, simulaciones y explicaciones pedagógicas. Ideal para cursos de visión por computador o presentaciones académicas.
+Desarrollado como parte de una demostración avanzada del algoritmo ORB, con visualizaciones, simulaciones y explicaciones simples, a solicitud de la docunete Elian del curso de Visión por Computador - III Ciclo de la Mestría en Inteligenci Artificial
+Integrantes del Grupo:
+Aradiel Hilario
+Estacio Deiby
+García Fernando
+Meza Moises.
 
