@@ -72,8 +72,8 @@ drive.mount('/content/drive')
 
 Desarrollado como parte de una demostración avanzada del algoritmo ORB, con visualizaciones, simulaciones y explicaciones simples, a solicitud de la docunete Elian del curso de Visión por Computador - III Ciclo de la Mestría en Inteligenci Artificial
 Integrantes del Grupo:
-Aradiel Hilario
-Estacio Deiby
-García Fernando
-Meza Moises.
+1. Aradiel Hilario
+2. Estacio Deiby
+3. García Fernando
+4. Meza Moises.
 
