@@ -2,6 +2,8 @@
 
 Este repositorio contiene una demostración completa del detector de características **ORB (Oriented FAST and Rotated BRIEF)** y una simulación visual de un sistema tipo **SLAM (Simultaneous Localization and Mapping)**.
 
+[![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/webconceptos/ORB_Demo/blob/main/ORB_Demo_Completo.ipynb)
+
 ---
 
 ## 📚 Contenido
@@ -17,63 +19,50 @@ Este repositorio contiene una demostración completa del detector de caracterís
 
 ---
 
-## 🧪 Experimentos incluidos en el Notebook
+## 🧪 Pipeline del Proyecto
 
-1. **Visualización de puntos clave con ORB**
-2. **Prueba de invarianza a rotación**
-3. **Comparación de tiempos entre ORB y SIFT**
-4. **Stitching panorámico simple**
-5. **Comparación visual con SIFT**
-6. **Simulación de SLAM con múltiples frames**
-7. **Animación final con flecha roja fija representando la dirección del robot**
+1. **🟢 Detección de puntos clave**
+2. **🔷 Cálculo de descriptores**
+3. **🔁 Emparejamiento entre imágenes**
+4. **📐 Estimación de transformaciones (homografía)**
+5. **🧵 Stitching panorámico**
+6. **🤖 Simulación de SLAM visual con animación**
 
 ---
 
 ## 🧠 ¿Qué es ORB?
 
-ORB es una técnica que combina:
-- `FAST`: detector rápido de esquinas.
-- `BRIEF`: descriptores binarios muy eficientes.
-- Mejora con **invarianza a rotación y escala**.
-
-Ideal para aplicaciones **en tiempo real**, como:
-- Robótica
-- SLAM
-- Visión móvil
+ORB es un algoritmo eficiente que combina:
+- `FAST`: detección rápida de esquinas
+- `BRIEF`: descriptores binarios compactos
+- Mejora con **invarianza a rotación** y escala mediante análisis de orientación
 
 ---
 
-## 🚀 Cómo ejecutar en Google Colab
+## 📈 Comparación de rendimiento
 
-1. Sube este repositorio o ZIP a tu Google Drive.
-2. Monta tu Drive en Colab:
-```python
-from google.colab import drive
-drive.mount('/content/drive')
-```
-3. Descomprime el ZIP:
-```bash
-!unzip "/content/drive/MyDrive/ORB_Demo_SLAM_Final.zip" -d "/content/orb_demo"
-```
-4. Abre el notebook:
-```bash
-%cd /content/orb_demo
-```
+ORB es hasta **10 veces más rápido que SIFT**, aunque ligeramente menos robusto en condiciones complejas. Ideal para aplicaciones en tiempo real como:
+- SLAM visual
+- Drones y robótica móvil
+- Realidad aumentada
+- Dispositivos con hardware limitado
 
 ---
 
-## 📸 Captura destacada
+## 🎥 Vista previa del sistema SLAM
 
 ![Simulación SLAM](SLAM_robot_simulacion_flecha_fija.gif)
 
 ---
 
+## 🚀 Cómo ejecutar en Google Colab
+
+1. Sube los archivos a tu Google Drive o clona el repositorio.
+2. Abre el notebook en Colab usando el botón o este [enlace directo](https://colab.research.google.com/github/webconceptos/ORB_Demo/blob/main/ORB_Demo_Completo.ipynb).
+3. Ejecuta celda por celda. Asegúrate de subir las imágenes si no están cargadas.
+
+---
+
 ## ✨ Créditos
 
-Desarrollado como parte de una demostración avanzada del algoritmo ORB, con visualizaciones, simulaciones y explicaciones simples, a solicitud de la docunete Elian del curso de Visión por Computador - III Ciclo de la Mestría en Inteligenci Artificial
-Integrantes del Grupo:
-1. Aradiel Hilario
-2. Estacio Deiby
-3. García Fernando
-4. Meza Moises.
-
+Este trabajo fue desarrollado como parte de una práctica avanzada de visión por computador, enfocada en demostrar la utilidad real de los detectores de características y su integración en sistemas visuales como SLAM.
