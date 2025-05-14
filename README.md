@@ -1,68 +1,62 @@
-# 🧠 ORB Feature Detection & SLAM Simulation
+# ORB: Velocidad y Precisión en la Detección de Características
 
-Este repositorio contiene una demostración completa del detector de características **ORB (Oriented FAST and Rotated BRIEF)** y una simulación visual de un sistema tipo **SLAM (Simultaneous Localization and Mapping)**.
+Este repositorio contiene un experimento didáctico sobre el detector ORB (*Oriented FAST and Rotated BRIEF*), orientado a tareas de visión por computador como detección de puntos clave, emparejamiento de imágenes y simulación de movimiento visual (SLAM básico).
+
+---
+
+## 🔍 Descripción del proyecto
+
+Este trabajo muestra cómo ORB puede ser utilizado para:
+- Detectar esquinas relevantes en imágenes.
+- Calcular descriptores binarios eficientes.
+- Realizar emparejamiento visual entre pares de imágenes.
+- Estimar homografías para stitching panorámico.
+- Simular desplazamiento visual como base para aplicaciones tipo SLAM.
+
+---
+
+## 📁 Contenido
+
+- `ORB_Demo_Completo_Clase.ipynb`: Notebook principal con todos los experimentos.
+- `SLAM_robot_simulacion_flecha_fija.gif`: Animación del recorrido visual del robot.
+- Imágenes de prueba: `edificio.jpg`, `paisaje1.jpg`, `paisaje2.jpg`, entre otras.
+
+---
+
+## 🧪 Pipeline demostrado
+
+1. **Detección de puntos clave con ORB**
+2. **Cálculo de descriptores binarios**
+3. **Emparejamiento entre imágenes**
+4. **Estimación de homografías (RANSAC)**
+5. **Stitching panorámico**
+6. **Simulación de SLAM visual mediante desplazamiento**
+
+---
+
+## 🎯 Aplicaciones prácticas destacadas
+
+- Robótica y navegación autónoma
+- Reconstrucción visual 2D y 3D
+- Detección en tiempo real en dispositivos embebidos
+- Sistemas de localización visual (Visual SLAM)
+
+---
+
+## 🚀 Ejecución en Google Colab
+
+Haz clic en el botón para abrir el notebook en Colab:
 
 [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/webconceptos/ORB_Demo/blob/main/ORB_Demo_Completo.ipynb)
 
 ---
 
-## 📚 Contenido
+## 🎓 Créditos
 
-- `ORB_Demo_Completo.ipynb`: Notebook principal con todas las pruebas y visualizaciones.
-- `SLAM_robot_simulacion_flecha_fija.gif`: GIF animado que simula el movimiento de un robot detectando keypoints y trazando su trayectoria.
-- Imágenes base para pruebas:
-  - `edificio.jpg`
-  - `edificio_rotado.jpg`
-  - `paisaje1.jpg`, `paisaje2.jpg`
-  - `frame_*.jpg`: frames simulados de desplazamiento
-  - `match_frame_*.jpg`: emparejamiento entre frames consecutivos
+Desarrollado como parte de una práctica académica en el curso de **Visión por Computadora**.
 
----
-
-## 🧪 Pipeline del Proyecto
-
-1. **🟢 Detección de puntos clave**
-2. **🔷 Cálculo de descriptores**
-3. **🔁 Emparejamiento entre imágenes**
-4. **📐 Estimación de transformaciones (homografía)**
-5. **🧵 Stitching panorámico**
-6. **🤖 Simulación de SLAM visual con animación**
-
----
-
-## 🧠 ¿Qué es ORB?
-
-ORB es un algoritmo eficiente que combina:
-- `FAST`: detección rápida de esquinas
-- `BRIEF`: descriptores binarios compactos
-- Mejora con **invarianza a rotación** y escala mediante análisis de orientación
-
----
-
-## 📈 Comparación de rendimiento
-
-ORB es hasta **10 veces más rápido que SIFT**, aunque ligeramente menos robusto en condiciones complejas. Ideal para aplicaciones en tiempo real como:
-- SLAM visual
-- Drones y robótica móvil
-- Realidad aumentada
-- Dispositivos con hardware limitado
-
----
-
-## 🎥 Vista previa del sistema SLAM
-
-![Simulación SLAM](SLAM_robot_simulacion_flecha_fija.gif)
-
----
-
-## 🚀 Cómo ejecutar en Google Colab
-
-1. Sube los archivos a tu Google Drive o clona el repositorio.
-2. Abre el notebook en Colab usando el botón o este [enlace directo](https://colab.research.google.com/github/webconceptos/ORB_Demo/blob/main/ORB_Demo_Completo.ipynb).
-3. Ejecuta celda por celda. Asegúrate de subir las imágenes si no están cargadas.
-
----
-
-## ✨ Créditos
-
-Este trabajo fue desarrollado como parte de una práctica avanzada de visión por computador, enfocada en demostrar la utilidad real de los detectores de características y su integración en sistemas visuales como SLAM.
+Integrantes del equipo:
+- Aradiel Hilario
+- García Fernando
+- Estacio Deiby
+- Meza Moisés
